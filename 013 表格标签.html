@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格标签</title>
+    <style>
+        table{
+            border: 1px solid red;
+        }
+
+        table, 
+        td, th{
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    作用：用来显示/展示数据<br>
+    1.&lt;table&gt;&lt;/table&gt;用于定义表格的标签<br>
+    2.&lt;tr&gt;&lt;/tr&gt;用于定义表格中的行，必须在table中<br>
+    3.&lt;td&gt;&lt;/td&gt;用于定义单元格，必须在tr中<br>
+    <table>
+        <tr>
+            <td>姓名</td> <td>性别</td> <td>年龄</td>
+        </tr>
+        <tr> 
+            <td>刘德华</td> <td>男</td> <td>56</td>
+        </tr>
+        <tr>
+            <td>张学友</td> <td>男</td> <td>58</td>
+        </tr>
+        <tr>
+            <td>郭富城</td> <td>男</td> <td>51</td>
+        </tr>
+        <tr>
+            <td>黎明</td> <td>男</td> <td>57</td>
+        </tr>
+    </table>
+    <br>
+
+    表头单元格：会加粗且居中显示
+    <table>
+        <tr>
+            <th>姓名</th> <th>性别</th> <th>年龄</th>
+        </tr>
+        <tr>
+            <td>刘德华</td> <td>男</td> <td>56</td>
+        </tr>
+        <tr>
+            <td>张学友</td> <td>男</td> <td>58</td>
+        </tr>
+    </table>
+    <br>
+
+    表格相关属性(CSS中用得多，此时只作了解)（得写在table里面）：<br>
+    1.align:居中显示<br>
+    <table align="center">
+        <tr>
+            <th>姓名</th> <th>性别</th> <th>年龄</th>
+        </tr>
+        <tr>
+            <td>刘德华</td> <td>男</td> <td>56</td>
+        </tr>
+        <tr>
+            <td>张学友</td> <td>男</td> <td>58</td>
+        </tr>
+    </table>
+    <br>
+    2.border:边框<br>
+    3.cellpadding:文字和单元格的距离<br>
+    4.cellspacing:单元格之间的距离<br>
+    5.width和height:可以改变大小<br>
+    <table align="center" border="1" cellpadding="0" cellspacing="0" width="500" height="200">
+        <tr>
+            <th>姓名</th> <th>性别</th> <th>年龄</th>
+        </tr>
+        <tr>
+            <td>刘德华</td> <td>男</td> <td>56</td>
+        </tr>
+        <tr>
+            <td>张学友</td> <td>男</td> <td>58</td>
+        </tr>
+    </table>
+    <br>
+
+    <h3>课堂案例:小说排行榜</h3>
+    <table align="center" cellspacing="0">
+        <tr>
+            <th>排名</th> <th>关键词</th> <th>趋势</th> <th>今日搜索</th> <th>最近七日</th> <th>相关链接</th>
+        </tr>
+        <tr>
+            <td>1</td> <td>鬼吹灯</td> <td>⬇️</td> <td>345</td> <td>123</td>
+            <td>
+                <a href="https://baike.baidu.com/item/%E9%AC%BC%E5%90%B9%E7%81%AF/10790" target="_blank">百度</a>
+                <a href="https://image.baidu.com/search/index?tn=baiduimage&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&word=%E9%AC%BC%E5%90%B9%E7%81%AF" target="_blank">图片</a>
+                <a href="https://tieba.baidu.com/f?ie=utf-8&kw=%E9%AC%BC%E5%90%B9%E7%81%AF" target="_blank">贴吧</a>
+            </td> 
+        </tr>
+        <tr>
+            <td>2</td> <td>盗墓笔记</td> <td>⬇️</td> <td>124</td> <td>675432</td>
+            <td>
+                <a href="https://baike.baidu.com/item/%E7%9B%97%E5%A2%93%E7%AC%94%E8%AE%B0/21859" target="_blank">百度</a>
+                <a href="https://image.baidu.com/search/index?tn=baiduimage&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&word=%E7%9B%97%E5%A2%93%E7%AC%94%E8%AE%B0" target="_blank">图片</a>
+                <a href="https://tieba.baidu.com/f?ie=utf-8&kw=%E7%9B%97%E5%A2%93%E7%AC%94%E8%AE%B0" target="_blank">贴吧</a>
+            </td> 
+        </tr>
+        <tr>
+            <td>3</td> <td>西游记</td> <td>⬆️</td> <td>212</td> <td>7654</td>
+            <td>
+                <a href="https://baike.baidu.com/item/%E8%A5%BF%E6%B8%B8%E8%AE%B0/5723?fr=aladdin" target="_blank">百度</a>
+                <a href="https://image.baidu.com/search/index?tn=baiduimage&ipn=r&ct=201326592&cl=2&lm=-1&st=-1&fm=result&fr=&sf=1&fmq=1660967304548_R&pv=&ic=&nc=1&z=&hd=&latest=&copyright=&se=1&showtab=0&fb=0&width=&height=&face=0&istype=2&dyTabStr=&ie=utf-8&sid=&word=%E8%A5%BF%E6%B8%B8%E8%AE%B0" target="_blank">图片</a>
+                <a href="https://tieba.baidu.com/f?ie=utf-8&kw=%E8%A5%BF%E6%B8%B8%E8%AE%B0&fr=search" target="_blank">贴吧</a>
+            </td> 
+        </tr>
+        <tr>
+            <td>4</td> <td>东游记</td> <td>⬆️</td> <td>23</td> <td>75645</td>
+            <td>
+                <a href="https://baike.baidu.com/item/%E4%B8%9C%E6%B8%B8%E8%AE%B0/10461211" target="_blank">百度</a>
+                <a href="https://image.baidu.com/search/index?tn=baiduimage&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&word=%E4%B8%9C%E6%B8%B8%E8%AE%B0" target="_blank">图片</a>
+                <a href="https://tieba.baidu.com/f?ie=utf-8&kw=%E4%B8%9C%E6%B8%B8%E8%AE%B0&fr=search" target="_blank">贴吧</a>
+            </td> 
+        </tr>
+        <tr>
+            <td>5</td> <td>甄嬛传</td> <td>⬇️</td> <td>121</td> <td>7676</td>
+            <td>
+                <a href="https://baike.baidu.com/item/%E7%94%84%E5%AC%9B%E4%BC%A0/4701562?fr=aladdin" target="_blank">百度</a>
+                <a href="https://image.baidu.com/search/index?tn=baiduimage&ipn=r&ct=201326592&cl=2&lm=-1&st=-1&fm=result&fr=&sf=1&fmq=1660967231419_R&pv=&ic=&nc=1&z=&hd=&latest=&copyright=&se=1&showtab=0&fb=0&width=&height=&face=0&istype=2&dyTabStr=&ie=utf-8&sid=&word=%E7%94%84%E5%AC%9B%E4%BC%A0" target="_blank">图片</a>
+                <a href="https://tieba.baidu.com/f?ie=utf-8&kw=%E7%94%84%E5%AC%9B%E4%BC%A0&fr=search" target="_blank">贴吧</a>
+            </td> 
+        </tr>
+        <tr>
+            <td>6</td> <td>水浒传</td> <td>⬆️</td> <td>576576</td> <td>1231421</td>
+            <td>
+                <a href="https://baike.baidu.com/item/%E6%B0%B4%E6%B5%92%E4%BC%A0/348" target="_blank">百度</a>
+                <a href="https://image.baidu.com/search/index?tn=baiduimage&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&word=%E6%B0%B4%E6%B5%92%E4%BC%A0" target="_blank">图片</a>
+                <a href="https://tieba.baidu.com/f?ie=utf-8&kw=%E6%B0%B4%E6%B5%92" target="_blank">贴吧</a>
+            </td> 
+        </tr>
+        <tr>
+            <td>7</td> <td>三国演义</td> <td>⬆️</td> <td>234</td> <td>7686</td>
+            <td>
+                <a href="https://baike.baidu.com/item/%E4%B8%89%E5%9B%BD%E6%BC%94%E4%B9%89/5782?fr=aladdin" target="_blank">百度</a>
+                <a href="https://image.baidu.com/search/index?tn=baiduimage&ct=201326592&lm=-1&cl=2&word=%E4%B8%89%E5%9B%BD%E6%BC%94%E4%B9%89" target="_blank">图片</a>
+                <a href="https://tieba.baidu.com/f?ie=utf-8&kw=%E4%B8%89%E5%9B%BD%E6%BC%94%E4%B9%89&fr=search" target="_blank">贴吧</a>
+            </td> 
+        </tr>
+    </table>
+    <br>
+
+    <h3>表格结构标签:把表格划分为两个部分</h3>
+    1.&lt;thead&gt;表格的头部区域<br>
+    2.&lt;tbody&gt;表格的主体区域<br>
+    <table align="center" border="1" cellpadding="0" cellspacing="0">
+        <!--我是表头-->
+        <thead>
+            <th>排名</th>
+            <th>关键词</th>
+            <th>趋势</th>
+            <th>今日搜索</th>
+            <th>最近七日</th>
+            <th>相关链接</th>
+        </thead>
+        <!--我是主题-->
+        <tbody>
+            <tr>
+                <td>1</td> <td>鬼吹灯</td> <td>⬇️</td> <td>345</td> <td>123</td>
+                <td>
+                    <a href="https://baike.baidu.com/item/%E9%AC%BC%E5%90%B9%E7%81%AF/10790" target="_blank">百度</a>
+                    <a href="https://image.baidu.com/search/index?tn=baiduimage&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&word=%E9%AC%BC%E5%90%B9%E7%81%AF" target="_blank">图片</a>
+                    <a href="https://tieba.baidu.com/f?ie=utf-8&kw=%E9%AC%BC%E5%90%B9%E7%81%AF" target="_blank">贴吧</a>
+                </td> 
+            </tr>
+            <tr>
+                <td>2</td> <td>盗墓笔记</td> <td>⬇️</td> <td>124</td> <td>675432</td>
+                <td>
+                    <a href="https://baike.baidu.com/item/%E7%9B%97%E5%A2%93%E7%AC%94%E8%AE%B0/21859" target="_blank">百度</a>
+                    <a href="https://image.baidu.com/search/index?tn=baiduimage&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&word=%E7%9B%97%E5%A2%93%E7%AC%94%E8%AE%B0" target="_blank">图片</a>
+                    <a href="https://tieba.baidu.com/f?ie=utf-8&kw=%E7%9B%97%E5%A2%93%E7%AC%94%E8%AE%B0" target="_blank">贴吧</a>
+                </td> 
+            </tr>
+            <tr>
+                <td>3</td> <td>西游记</td> <td>⬆️</td> <td>212</td> <td>7654</td>
+                <td>
+                    <a href="https://baike.baidu.com/item/%E8%A5%BF%E6%B8%B8%E8%AE%B0/5723?fr=aladdin" target="_blank">百度</a>
+                    <a href="https://image.baidu.com/search/index?tn=baiduimage&ipn=r&ct=201326592&cl=2&lm=-1&st=-1&fm=result&fr=&sf=1&fmq=1660967304548_R&pv=&ic=&nc=1&z=&hd=&latest=&copyright=&se=1&showtab=0&fb=0&width=&height=&face=0&istype=2&dyTabStr=&ie=utf-8&sid=&word=%E8%A5%BF%E6%B8%B8%E8%AE%B0" target="_blank">图片</a>
+                    <a href="https://tieba.baidu.com/f?ie=utf-8&kw=%E8%A5%BF%E6%B8%B8%E8%AE%B0&fr=search" target="_blank">贴吧</a>
+                </td> 
+            </tr>
+            <tr>
+                <td>4</td> <td>东游记</td> <td>⬆️</td> <td>23</td> <td>75645</td>
+                <td>
+                    <a href="https://baike.baidu.com/item/%E4%B8%9C%E6%B8%B8%E8%AE%B0/10461211" target="_blank">百度</a>
+                    <a href="https://image.baidu.com/search/index?tn=baiduimage&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&word=%E4%B8%9C%E6%B8%B8%E8%AE%B0" target="_blank">图片</a>
+                    <a href="https://tieba.baidu.com/f?ie=utf-8&kw=%E4%B8%9C%E6%B8%B8%E8%AE%B0&fr=search" target="_blank">贴吧</a>
+                </td> 
+            </tr>
+        </tbody>
+    </table>
+    <br>
+
+    <h3>合并单元格</h3>
+    1.跨行合并:rowspan=“合并单元格的个数”<br>
+    2.跨列合并:colspan=“合并单元格的个数”<br>
+
+    <table width="500" height="249" border="1" cellspacing="0">
+        <tr>
+            <td></td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td rowspan="2"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <br>
+    
+</body>
+</html>
